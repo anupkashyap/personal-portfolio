@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .skills{
     background-color: white;
     overflow-y: hidden;
@@ -9,9 +11,17 @@
         top:20%;
         position: relative;
 
+        @include mobile{
+            top:0;
+        }
+
         h2{
             font-size: 4.5rem;
             font-weight: 300;
+            
+            @include mobile{
+                font-size: 2rem;
+            }
         }
     }
     .wrapper{
@@ -20,11 +30,23 @@
         display: flex;
         flex-wrap: wrap;
         
+        @include mobile{
+            width: 100%;
+            justify-content: center;
+        }
 
         .iconContainer{
             padding-right: 10px;
             padding-left: 10px;
             padding-top: 20px;
+
+            i{
+                font-size: 8rem;
+
+                @include mobile{
+                    font-size: 3.5rem;
+                }
+            }
         }
         .nameHolder{
             display: flex;

@@ -1,70 +1,79 @@
-.about{
+@import "../../global.scss";
+
+.about {
     background-color: white;
     display: flex;
 
-    .left{
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .left {
         flex: 0.5;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         display: flex;
         margin-left: 5%;
 
-        .itemContainer{
+        .itemContainer {
             display: flex;
             align-items: center;
-            .imgContainer{
+            .imgContainer {
                 width: 20%;
                 margin: 10px;
 
-                img{
+                img {
                     width: 100%;
                     object-fit: cover;
                 }
             }
 
-            .description{
+            .description {
                 font-weight: 100;
 
-                h5{
+                h5 {
                     font-weight: inherit;
                 }
             }
-
         }
-
     }
 
-    .right{
+    .right {
         flex: 0.5;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         display: flex;
         padding-left: 5%;
         border-left: lightgray;
         border-left-width: 2px;
         border-left-style: solid;
 
-        .itemContainer{
+        @include mobile {
+            border-top: lightgray;
+            border-top-width: 2px;
+            border-top-style: solid;
+        }
+
+        .itemContainer {
             display: flex;
             align-items: center;
-            .imgContainer{
+            .imgContainer {
                 width: 20%;
                 margin: 10px;
 
-                img{
+                img {
                     width: 100%;
                     object-fit: cover;
                 }
             }
 
-            .description{
+            .description {
                 font-weight: 100;
 
-                h5{
+                h5 {
                     font-weight: inherit;
                 }
             }
-
         }
     }
 }

@@ -38,8 +38,12 @@
                 }
                 
                 span{
-                    font-size: 15px;
+                    font-size: 1rem;
                     font-weight: 100;
+
+                    @include mobile{
+                        font-size: 0.6rem;
+                    }
                 }
             }
         }
@@ -52,6 +56,11 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+
+                @include mobile{
+                    width: 24px;
+                    height: 20px;
+                }
 
                 span{
                     width:100%;

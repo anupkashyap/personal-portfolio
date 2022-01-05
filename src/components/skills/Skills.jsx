@@ -117,7 +117,7 @@ const Skills = () => {
                     skillList.map(x => (
                         <div key={x}>
                             <div className="iconContainer">
-                                <i class={x.icon} style={{ "fontSize": "8rem" }}></i>
+                                <i class={x.icon} ></i>
                             </div>
                             {/* <div className="nameHolder">
                                 <h5>{x.name}</h5>
