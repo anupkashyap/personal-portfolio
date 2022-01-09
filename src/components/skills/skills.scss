@@ -39,9 +39,10 @@
             padding-right: 10px;
             padding-left: 10px;
             padding-top: 20px;
+            
 
             i{
-                font-size: 8rem;
+                font-size: 10vh;
 
                 @include mobile{
                     font-size: 3.5rem;
